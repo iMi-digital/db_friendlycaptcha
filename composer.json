@@ -1,0 +1,41 @@
+{
+	"name": "evoweb/recaptcha",
+	"type": "typo3-cms-extension",
+	"description": "Easy on Humans, Hard on Bots",
+	"license": "GPL-2.0-or-later",
+
+	"support": {
+		"issues": "https://github.com/evoWeb/recaptcha/issues"
+	},
+
+	"keywords": [
+		"recaptcha",
+		"nocaptcha 2",
+		"invisible captcha"
+	],
+
+	"suggest": {
+		"typo3/cms-form": "^9.5 || ^10.0"
+	},
+
+	"require": {
+		"typo3/cms-core": "^9.5 || ^10.0"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"Evoweb\\Recaptcha\\": "Classes/"
+		}
+	},
+
+	"config": {
+		"vendor-dir": ".Build/Web/vendor",
+		"bin-dir": ".Build/bin"
+	},
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": ".Build/Web"
+		}
+	}
+}
