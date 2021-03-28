@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers"
+      xmlns:frc="http://typo3.org/ns/BalatD/FriendlyCaptcha/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<formvh:renderRenderable renderable="{element}">
+    <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
+        <f:format.raw><frc:form.friendlycaptcha>
+            <f:form.hidden
+                property="{element.identifier}"
+                id="{element.uniqueIdentifier}"
+                value="1"
+                additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
+            />
+            <div class="frc-captcha" data-sitekey="{configuration.public_key}"></div>
+        </frc:form.friendlycaptcha></f:format.raw>
+    </f:render>
+</formvh:renderRenderable>
+
+</html>

@@ -1,0 +1,23 @@
+plugin.tx_friendlycaptcha {
+    public_key = {$plugin.tx_friendlycaptcha.public_key}
+    public_key.wrap.cObject = COA
+    public_key.wrap.cObject {
+        10 = TEXT
+        10.value = <div class="frc-captcha" data-sitekey="|"></div>
+    }
+
+    private_key = {$plugin.tx_friendlycaptcha.private_key}
+    verify_server = {$plugin.tx_friendlycaptcha.verify_server}
+}
+
+# add settings for EXT:form
+plugin.tx_form.settings.yamlConfigurations.1998 = EXT:db_friendlycaptcha/Configuration/Yaml/BaseSetup.yaml
+plugin.tx_form.view.partialRootPaths.1998 = EXT:db_friendlycaptcha/Resources/Private/Frontend/Partials/
+
+page.includeJSFooterlibs{
+  friendlycaptchaModule = https://unpkg.com/friendly-challenge@0.8.3/widget.module.min.js
+  friendlycaptchaModule.external = 1
+
+  friendlycaptcha = https://unpkg.com/friendly-challenge@0.8.3/widget.min.js
+  friendlycaptcha.external = 1
+}

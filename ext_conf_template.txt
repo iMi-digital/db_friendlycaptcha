@@ -1,0 +1,8 @@
+# cat=plugin.db_friendlycaptcha; type=string; label=Friendly Captcha Verify Server
+verify_server = https://friendlycaptcha.com/api/v1/siteverify
+
+# cat=plugin.db_friendlycaptcha; type=string; label=Friendly Captcha Sitekey
+public_key = FCMOABOI5RB32NME
+
+# cat=plugin.db_friendlycaptcha; type=string; label=Friendly Captcha API key
+private_key = A1MKM8IIS391S48FNVJO6VIHBBR1UV83L9PIRGJT9JU0J0N9ANGBG79ITR

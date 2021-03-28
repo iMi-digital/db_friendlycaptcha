@@ -1,0 +1,10 @@
+plugin.tx_recaptcha {
+    # cat=plugin.recaptcha//02; type=string; label= reCAPTCHA VERIFY-server address
+    verify_server = https://friendlycaptcha.com/api/v1/siteverify
+
+    # cat=plugin.recaptcha//03; type=string; label= Friendly Captcha Sitekey
+    public_key = FCMOABOI5RB32NME
+
+    # cat=plugin.recaptcha//04; type=string; label= Friendly Captcha API key
+    private_key = A1MKM8IIS391S48FNVJO6VIHBBR1UV83L9PIRGJT9JU0J0N9ANGBG79ITR
+}
