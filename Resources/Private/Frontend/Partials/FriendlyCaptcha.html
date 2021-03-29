@@ -11,8 +11,6 @@
                 value="1"
                 additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
             />
-            <f:debug>{_all}</f:debug>
-
             <div class="frc-captcha"
                  data-sitekey="{configuration.public_key}"
                  {f:if(condition: '{configuration.lang}', then: 'data-lang="{configuration.lang}"')}></div>
