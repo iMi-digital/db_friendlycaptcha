@@ -2,7 +2,6 @@
       xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers"
       xmlns:frc="http://typo3.org/ns/BalatD/FriendlyCaptcha/ViewHelpers"
       data-namespace-typo3-fluid="true">
-
 <formvh:renderRenderable renderable="{element}">
     <f:render partial="Field/Field" arguments="{element: element}" contentAs="elementContent">
         <f:format.raw><frc:form.friendlycaptcha>
@@ -12,7 +11,11 @@
                 value="1"
                 additionalAttributes="{formvh:translateElementProperty(element: element, property: 'fluidAdditionalAttributes')}"
             />
-            <div class="frc-captcha" data-sitekey="{configuration.public_key}"></div>
+            <f:debug>{_all}</f:debug>
+
+            <div class="frc-captcha"
+                 data-sitekey="{configuration.public_key}"
+                 {f:if(condition: '{configuration.lang}', then: 'data-lang="{configuration.lang}"')}></div>
         </frc:form.friendlycaptcha></f:format.raw>
     </f:render>
 </formvh:renderRenderable>

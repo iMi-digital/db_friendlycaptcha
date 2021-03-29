@@ -8,6 +8,7 @@ plugin.tx_friendlycaptcha {
 
     private_key = {$plugin.tx_friendlycaptcha.private_key}
     verify_server = {$plugin.tx_friendlycaptcha.verify_server}
+    lang = {$plugin.tx_friendlycaptcha.lang}
 }
 
 # add settings for EXT:form

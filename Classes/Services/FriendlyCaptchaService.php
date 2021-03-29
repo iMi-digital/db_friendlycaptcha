@@ -31,11 +31,6 @@ class FriendlyCaptchaService
     protected $objectManager;
 
     /**
-     * @var RequestFactoryInterface
-     */
-    protected $requestFactory;
-
-    /**
      * @var array
      */
     protected $configuration = [];
@@ -44,11 +39,6 @@ class FriendlyCaptchaService
     {
         $this->objectManager = $objectManager;
         $this->initialize();
-    }
-
-    public function injectRequestFactory(RequestFactoryInterface $requestFactory)
-    {
-        $this->requestFactory = $requestFactory;
     }
 
     public static function getInstance(): FriendlyCaptchaService
