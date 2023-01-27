@@ -18,4 +18,8 @@ call_user_func(function () {
             1999 = EXT:db_friendlycaptcha/Configuration/Yaml/FormEditorSetup.yaml
         }
     ');
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+        <INCLUDE_TYPOSCRIPT: source="FILE:EXT:db_friendlycaptcha/Configuration/TSconfig/Ext/FeManager/customfields.tsconfig">
+    ');
 });
