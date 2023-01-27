@@ -18,5 +18,8 @@ extend your typo3conf/LocalConfiguration with the following:
         'lang' => 'de',
         'private_key' => 'XXXXXXXX',
         'public_key' => 'XXXXXXXXX',
-        'verify_server' => 'https://eu-api.friendlycaptcha.eu/api/v1/puzzle', (or 'https://api.friendlycaptcha.com/api/v1/puzzle' for global endpoint)
+        'verify_server' => 'https://eu-api.friendlycaptcha.eu/api/v1/siteverify',
+        'puzzle_server' => 'https://eu-api.friendlycaptcha.eu/api/v1/puzzle',
     ],
+
+leave verify_server and puzzle_server empty for global endpoint
