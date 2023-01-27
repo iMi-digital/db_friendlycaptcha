@@ -13,7 +13,8 @@
             />
             <div class="frc-captcha"
                  data-sitekey="{configuration.public_key}"
-                 {f:if(condition: '{configuration.lang}', then: 'data-lang="{configuration.lang}"')}></div>
+                 data-puzzle-endpoint="{configuration.verify_server}"
+                 {f:if(condition: '{configuration.lang}', then: 'data-lang="{configuration.lang}"')}</div>
         </frc:form.friendlycaptcha></f:format.raw>
     </f:render>
 </formvh:renderRenderable>

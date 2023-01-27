@@ -10,3 +10,13 @@ The recommended way to install TYPO3 Console is by using [Composer](https://getc
 
     composer require balatd/db_friendlycaptcha
 
+### Configuration
+
+extend your typo3conf/LocalConfiguration with the following:
+
+    'db_friendlycaptcha' => [
+        'lang' => 'de',
+        'private_key' => 'XXXXXXXX',
+        'public_key' => 'XXXXXXXXX',
+        'verify_server' => 'https://eu-api.friendlycaptcha.eu/api/v1/puzzle', (or 'https://api.friendlycaptcha.com/api/v1/puzzle' for global endpoint)
+    ],
