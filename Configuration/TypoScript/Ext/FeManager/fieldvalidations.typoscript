@@ -6,6 +6,8 @@ plugin.tx_femanager.settings {
 
             friendlyCaptcha {
                 required = 1
+                # custom validation method:
+                friendlyCaptcha = 1
             }
         }
     }
@@ -16,6 +18,8 @@ plugin.tx_femanager.settings {
 
             friendlyCaptcha {
                 required = 1
+                # custom validation method:
+                friendlyCaptcha = 1
             }
         }
     }
