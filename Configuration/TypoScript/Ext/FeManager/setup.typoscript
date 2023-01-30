@@ -7,3 +7,4 @@ plugin.tx_femanager {
 }
 
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:db_friendlycaptcha/Configuration/TypoScript/Ext/FeManager/fieldvalidations.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:db_friendlycaptcha/Configuration/TypoScript/Ext/FeManager/translation.typoscript">
