@@ -23,10 +23,5 @@ page.includeJSFooterlibs{
   friendlycaptcha.external = 1
 }
 
-
-// Includes FeManager
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:db_friendlycaptcha/Configuration/TypoScript/Ext/FeManager/setup.typoscript">
-
-
 // Includes FeManager
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:db_friendlycaptcha/Configuration/TypoScript/Ext/FeManager/setup.typoscript">
