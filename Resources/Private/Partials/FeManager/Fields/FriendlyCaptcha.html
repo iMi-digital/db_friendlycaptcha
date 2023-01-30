@@ -3,6 +3,7 @@
 <frc:form.friendlycaptcha>
     <div id="frc-captcha" class="frc-captcha femanager_fieldset femanager_friendlyCaptcha form_group"
          data-sitekey="{configuration.public_key}"
+         {f:if(condition: '{configuration.puzzle_server}', then: 'data-puzzle-endpoint="{configuration.puzzle_server}"')}
          {f:if(condition: '{configuration.lang}', then: 'data-lang="{configuration.lang}"')}
     >
         <f:form.hidden
