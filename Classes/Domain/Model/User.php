@@ -1,6 +1,6 @@
 <?php
 
-namespace BalatD\FriendlyCaptcha\Domain\Model\Domain;
+namespace BalatD\FriendlyCaptcha\Domain\Model;
 
 class User extends \In2code\Femanager\Domain\Model\User
 {
