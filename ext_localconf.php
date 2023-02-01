@@ -34,4 +34,10 @@ call_user_func(function () {
             \In2code\Femanager\Domain\Validator\ClientsideValidator::class,
             \BalatD\FriendlyCaptcha\Domain\Validator\ClientsideValidator::class
         );
+
+    if (\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::isLoaded('femanager')) {
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\In2code\Femanager\Domain\Repository\UserRepository::class] = [
+            'className' => \BalatD\FriendlyCaptcha\Domain\Repository\UserRepository::class
+        ];
+    }
 });
